@@ -4,7 +4,7 @@ import logoImage from './assets/logo.png';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-100 via-indigo-50 to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-b from-purple-100 via-indigo-50 to-emerald-50" >
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-purple-600 via-indigo-600 to-emerald-600 text-white py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -12,19 +12,24 @@ function App() {
           <Moon className="absolute top-20 right-1/3 w-12 h-12" />
           <Sun className="absolute bottom-10 right-1/4 w-10 h-10" />
           <Flower2 className="absolute bottom-20 left-1/3 w-8 h-8" />
+          
         </div>
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <img 
+        <img 
             src={logoImage}
             alt="Instituto Revibe" 
-            className="w-96 mx-auto mb-12"
+            className="w-100 mx-auto mb-0"
+            style={{maxWidth: '400px'}}
           />
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        <div className="container mx-auto mt-3 px-6 text-center relative z-10">
+          
+          <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
             Cure-se de dentro para fora e descubra a magia de ser você
           </p>
+          <a href="https://wa.me/5518996496655" target="_blank" rel="noopener noreferrer">
           <button className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-purple-50 transition duration-300 shadow-lg">
             Inicie Sua Jornada de Cura
           </button>
+          </a>
         </div>
       </header>
 
@@ -94,9 +99,11 @@ function App() {
               </ul>
             </div>
             <div className="text-center">
-              <button className="bg-lavender-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-lavender-700 transition duration-300 shadow-lg">
-                Honre Sua Essência ✨
-              </button>
+              <a href="https://wa.me/5518991669184" target="_blank" rel="noopener noreferrer">
+                <button className="bg-lavender-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-lavender-700 transition duration-300 shadow-lg">
+                  Honre Sua Essência ✨
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -138,9 +145,11 @@ function App() {
               </ul>
             </div>
             <div className="text-center">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
-                Permita-se sentir essa transformação ✨
-              </button>
+              <a href="https://wa.me/5518991426251" target="_blank" rel="noopener noreferrer">
+                <button className="bg-lavender-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-lavender-700 transition duration-300 shadow-lg">
+                  Permita-se sentir essa transformação
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -190,9 +199,11 @@ function App() {
               </ul>
             </div>
             <div className="text-center">
-              <button className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition duration-300 shadow-lg">
-                Descubra Sua Mensagem ✨
-              </button>
+              <a href="https://wa.me/5518996496655" target="_blank" rel="noopener noreferrer">
+                <button className="bg-lavender-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-lavender-700 transition duration-300 shadow-lg">
+                  Descubra sua mensagem
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -206,7 +217,8 @@ function App() {
             <Star className="w-6 h-6" />
             <Sun className="w-6 h-6" />
           </div>
-          <p className="text-indigo-200">Instituto Revibe - Transformando Vidas Através da Cura Holística</p>
+          <p className="text-indigo-200">Instituto Revibe - Transformando Vidas Através da Cura Holística 
+          © 2024 Instituto Revibe</p>
         </div>
       </footer>
     </div>
