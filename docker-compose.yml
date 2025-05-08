@@ -2,7 +2,7 @@ version: '3'
 
 services:
   revibe:
-    image: ghcr.io/kaiquenog/instrevibe:main
+    image: ghcr.io/kaiquenog/revibe:latest
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.revibe.rule=Host(`institutorevibe.com.br`)"
