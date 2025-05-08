@@ -1,5 +1,5 @@
 # build stage
-FROM node:20 as build
+FROM ghcr.io/kaiquenog/instrevibe:main as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
