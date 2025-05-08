@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  revibe:
+  instrevibe:
     image: ghcr.io/kaiquenog/revibe:latest
     labels:
       - "traefik.enable=true"
