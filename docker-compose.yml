@@ -3,6 +3,7 @@ version: '3.8'
 services:
   revibe:
     image: ghcr.io/kaiquenog/instrevibe:main
+    platform: linux/amd64
     hostname: "{{.Service.Name}}.{{.Task.Slot}}"
     labels:
       - "traefik.enable=true"
