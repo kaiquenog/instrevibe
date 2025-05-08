@@ -5,10 +5,13 @@ services:
     image: ghcr.io/kaiquenog/revibe:latest
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.revibe.rule=Host(`institutorevibe.com.br`)"
+      - "traefik.http.routers.revibe.rule=Host(`institutorevibe.com.br`) || Host(`revibe.localhost`)"
       - "traefik.http.services.revibe.loadbalancer.server.port=80"
       - "traefik.http.routers.revibe.entrypoints=websecure"
       - "traefik.http.routers.revibe.tls=true"
+      - "traefik.http.routers.revibe-insecure.entrypoints=web"
+      - "traefik.http.routers.revibe-insecure.rule=Host(`revibe-test.localhost`)"
+      - "traefik.http.routers.revibe-insecure.service=instrevibe"
     networks:
       - network_swarm_public
 
