@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   revibe:
-    image: ghcr.io/kaiquenog/revibe:latest
+    image: ghcr.io/kaiquenog/revibe:main
     hostname: "{{.Service.Name}}.{{.Task.Slot}}"
     deploy:
       replicas: 1
