@@ -4,10 +4,6 @@ services:
   revibe:
     image: ghcr.io/kaiquenog/instrevibe:main
     hostname: "{{.Service.Name}}.{{.Task.Slot}}"
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.revibe.rule=Host(`institutorevibe.com.br`)"  # Substitua pelo seu domínio
