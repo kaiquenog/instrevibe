@@ -1,10 +1,10 @@
 # build stage
-FROM ghcr.io/kaiquenog/instrevibe:main as build
+FROM node:20 as build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run buildAdd commentMore actions
+RUN npm run build
 
 # production stage
 FROM nginx:stable as production
